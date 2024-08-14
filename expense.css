@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.income-expense-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+.money {
+    font-size: 1.2em;
+}
+
+.plus {
+    color: #2ecc71;
+}
+
+.minus {
+    color: #e74c3c;
+}
+
+.list {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.list li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-right: 5px solid;
+}
+
+.list .minus {
+    border-color: #e74c3c;
+}
+
+.list .plus {
+    border-color: #2ecc71;
+}
+
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-control label {
+    font-size: 1em;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .income-expense-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .income-expense-container div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .money {
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .money {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+
+    .form-control input {
+        padding: 8px;
+    }
+
+    .list li {
+        padding: 8px;
+    }
+}
+
+
+.copyright
+{
+    font-size: 8px;
+}
